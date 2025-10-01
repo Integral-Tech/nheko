@@ -25,7 +25,7 @@ Window {
     Component.onCompleted: Nheko.setWindowRole(imageOverlay, "imageoverlay")
 
     Shortcut {
-        sequences: [StandardKey.Cancel]
+        sequences: [StandardKey.Close, StandardKey.Cancel]
         onActivated: imageOverlay.close()
     }
 
